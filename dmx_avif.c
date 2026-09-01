@@ -225,7 +225,7 @@ GF_FilterRegister AVIFDmxRegister = {
 	.finalize = avifdmx_finalize,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_avifdmx_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE avifdmx_register(GF_FilterSession *session)
 {
 	return &AVIFDmxRegister;
 }
@@ -233,5 +233,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_avifdmx_register(GF_Filte
 #include "filter_register.h"
 __attribute__((constructor))
 void register_avifdmx(void) {
-    gf_filter_auto_register("avifdmx", dynCall_avifdmx_register);
+    gf_filter_auto_register("avifdmx", avifdmx_register);
 }
