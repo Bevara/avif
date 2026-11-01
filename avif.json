@@ -1,6 +1,6 @@
 {
     "name": "avif",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "AVIF demultiplexer",
     "filters":["avifdmx"],
     "help": "This filter extracts the primary AV1-coded image item from an AVIF (HEIF/MIAF) file using GPAC's own ISOBMFF meta/item APIs, and pairs with the libaom-based av1dec filter for decoding.",
@@ -15,7 +15,7 @@
       "avif" : "img",
       "avifs" : "img"
     },
-    "using": ["solver_1"],
+    "using": ["mm_solver_1.0.1"],
     "patents": {
         "status": "royalty-free",
         "note": "AVIF container; decoding AV1 needs an AV1 accessor",
