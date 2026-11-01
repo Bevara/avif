@@ -15,7 +15,7 @@
       "avif" : "img",
       "avifs" : "img"
     },
-    "using": ["mm_solver_1.0.1"],
+    "using": ["mm_solver_1.0.1", "mm_solver_1.0.2"],
     "patents": {
         "status": "royalty-free",
         "note": "AVIF container; decoding AV1 needs an AV1 accessor",
